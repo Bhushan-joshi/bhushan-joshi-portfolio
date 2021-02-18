@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="toggle" onclick="toggleMenu();"></div>
+
+	<section class="banner" id="home">
+		<div class="imgSidebar">
+			<img src="./assets/bg.jpg" alt="it's me">
+		</div>
+		<div class="contentBx">
+			<h5 class="logoText">My_portfolio</h5>
+			<div>
+				<h4><span>Hello</span>, I'm</h4>
+				<h2>Bhushan Joshi</h2>
+				<h4>I am a Full Stack web Developer.</h4>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo a quaerat ab. Vitae enim quae ab
+					pariatur iure fugit incidunt ipsa temporibus. Accusantium, eligendi? Molestiae assumenda ipsum illo
+					odit eveniet.</p>
+				<a href="#" class="btn">About me</a>
+			</div>
+			<ul class="sci">
+				<li><a href="#"><img src="/assets/facebook.png" alt="FB"></a></li>
+				<li><a href="#"><img src="/assets/twitter.png" alt="TW"></a></li>
+				<li><a href="#"><img src="/assets/instagram.png" alt="INS"></a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="about" id="about">
+		<div class="title white">
+			<h2>About</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+		</div>
+		<div class="content">
+			<div class="textBx">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, sequi assumenda. Magnam nulla iste
+					inventore, quas itaque veritatis quaerat nesciunt beatae aliquid corporis quo amet, illum dolores.
+					Perferendis consequatur blanditiis non voluptate officiis deserunt, ad libero enim exercitationem a
+					aliquid magnam eligendi iste nulla veniam ipsam optio consequuntur autem qui.
+					<br><br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, modi, odio facilis dolore a quis,
+					optio voluptatibus excepturi exercitationem labore quod quasi. Minima modi quo vel cum incidunt
+					optio quod sunt aliquid tempore rerum recusandae atque quasi in similique perspiciatis eius fuga,
+					esse blanditiis laudantium. Nulla doloremque dolorem blanditiis. Repellat.
+				</p>
+			</div>
+			<div class="imgBx">
+				<img src="assets/bg1.jpg" alt="">
+			</div>
+		</div>
+	</section>
+	<div class="sidebar">
+		<ul class="menu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+	<script>
+		function toggleMenu() {
+			const Toggle = document.querySelector('.toggle')
+			const Side = document.querySelector('.sidebar')
+			Toggle.classList.toggle('active');
+			Side.classList.toggle('active');
+		}
+	</script>
+</body>
+
+</html>
